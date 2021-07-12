@@ -23,8 +23,8 @@ import io.micronaut.core.annotation.Nullable;
 import io.micronaut.core.naming.NameResolver;
 import io.micronaut.inject.qualifiers.Qualifiers;
 import io.micronaut.jdbc.DataSourceResolver;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
 import javax.sql.DataSource;
 
 /**

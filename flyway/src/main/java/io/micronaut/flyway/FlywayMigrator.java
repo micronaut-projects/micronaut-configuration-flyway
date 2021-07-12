@@ -17,8 +17,8 @@ package io.micronaut.flyway;
 
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.context.event.ApplicationEventPublisher;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
 import javax.sql.DataSource;
 
 /**

@@ -11,6 +11,9 @@ dependencies {
     api "io.micronaut:micronaut-management"
     api "io.micronaut.sql:micronaut-jdbc"
 
+    // TODO: Remove this when RxJava2 -> Reactor is done in core
+    api "io.micronaut.reactor:micronaut-reactor"
+
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testImplementation "org.codehaus.groovy:groovy-sql:$groovyVersion"
     testImplementation "io.micronaut:micronaut-http-client"

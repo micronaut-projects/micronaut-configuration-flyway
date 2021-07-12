@@ -22,12 +22,12 @@ import io.micronaut.flyway.event.SchemaCleanedEvent;
 import io.micronaut.inject.qualifiers.Qualifiers;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.Async;
+import jakarta.inject.Singleton;
 import org.flywaydb.core.Flyway;
 import org.flywaydb.core.api.configuration.FluentConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.inject.Singleton;
 import javax.sql.DataSource;
 
 /**

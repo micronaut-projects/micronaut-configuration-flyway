@@ -6,10 +6,10 @@ import io.micronaut.context.ApplicationContext
 import io.micronaut.context.annotation.Requires
 import io.micronaut.context.env.Environment
 import io.micronaut.runtime.event.annotation.EventListener
+import jakarta.inject.Singleton
 import org.flywaydb.core.Flyway
 import spock.lang.Specification
 import spock.util.concurrent.PollingConditions
-import javax.inject.Singleton
 import javax.sql.DataSource
 
 class EventListenerSpec extends Specification {

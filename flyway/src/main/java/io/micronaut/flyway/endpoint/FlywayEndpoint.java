@@ -20,9 +20,9 @@ import io.micronaut.context.ApplicationContext;
 import io.micronaut.inject.qualifiers.Qualifiers;
 import io.micronaut.management.endpoint.annotation.Endpoint;
 import io.micronaut.management.endpoint.annotation.Read;
-import io.reactivex.Flowable;
 import org.flywaydb.core.Flyway;
 import org.reactivestreams.Publisher;
+import reactor.core.publisher.Flux;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -60,7 +60,7 @@ public class FlywayEndpoint {
     @Read
     public Publisher<FlywayReport> flywayMigrations() {
 
-        return Flowable.fromIterable(flywayConfigurationProperties)
+        return Flux.fromIterable(flywayConfigurationProperties)
                 .filter(FlywayConfigurationProperties::isEnabled)
                 .map(c -> new Pair<>(c,
                         applicationContext

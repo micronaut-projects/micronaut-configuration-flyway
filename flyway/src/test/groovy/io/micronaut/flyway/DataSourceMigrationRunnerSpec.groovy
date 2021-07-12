@@ -3,8 +3,8 @@ package io.micronaut.flyway
 import io.micronaut.context.annotation.Primary
 import io.micronaut.context.annotation.Requires
 import io.micronaut.jdbc.DataSourceResolver
+import jakarta.inject.Singleton
 
-import javax.inject.Singleton
 import javax.sql.DataSource
 
 class DataSourceMigrationRunnerSpec extends ApplicationContextSpecification {
